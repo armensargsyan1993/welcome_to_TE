@@ -1,5 +1,5 @@
 import { FC } from "react";
-import { HoverBlock, IHoverBlockProps } from "../block";
+import { HoverBlock, IHoverBlockProps } from "../hover-block";
 
 interface IAddress {
   country: string;
