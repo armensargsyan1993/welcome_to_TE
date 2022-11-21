@@ -1,6 +1,5 @@
 import React, { Component, memo, PureComponent } from "react";
-import { TEntries } from "../types";
-import { memoizedCheck } from "./helpers/memo/memoized-check";
+import { memoizedCheck } from "../helpers/memo/memoized-check";
 
 type IUser = {
   name: string;
@@ -25,7 +24,7 @@ const SecondComponent = memo(
       my name is {name}, my age is {age}
     </div>
   ),
-  (...args) => memoizedCheck(...args, "user")
+  (prev, next) => memoizedCheck(prev, next, "user")
 );
 
 // class component

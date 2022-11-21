@@ -1,4 +1,4 @@
-import { TEntries } from "../../../types";
+import { TEntries } from "../../types";
 
 export const memoizedCheck = <T extends Record<string, unknown>>(
   prev: Record<keyof T, any>,
